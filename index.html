@@ -615,6 +615,23 @@
         display: none;
       }
     }
+
+    /* Extended paper submission deadline */
+    .old-deadline {
+      text-decoration: line-through;
+      text-decoration-thickness: 2px;
+      opacity: 0.75;
+    }
+
+    .new-deadline {
+      color: #ffb347;
+      font-weight: 800;
+      margin-left: 0.45rem;
+    }
+
+    .timeline .new-deadline {
+      color: #b42318;
+    }
   </style>
 </head>
 
@@ -700,7 +717,7 @@
             <div class="meta-icon">04</div>
             <div>
               <strong>Details</strong>
-              <span>Submission deadline: November 20, 2026.</span>
+              <span>Submission deadline: <del class="old-deadline">November 20</del><strong class="new-deadline">November 25, 2026</strong></span>
             </div>
           </div>
         </div>
@@ -933,7 +950,7 @@
           </div>
           <div>
             <a class="btn btn-primary" style="width:100%;text-align:center;" href="https://openreview.net/group?id=AAAI.org/2027/Workshop/AI4Factory" target="_blank" rel="noopener noreferrer">Submit on OpenReview ↗</a>
-            <p style="font-size:0.9rem;">Submission deadline: <strong>November 20, 2026</strong></p>
+            <p style="font-size:0.9rem;">Submission deadline: <del class="old-deadline">November 20</del><strong class="new-deadline">November 25, 2026</strong></p>
           </div>
         </div>
       </div>
@@ -955,7 +972,7 @@
         <div class="timeline">
           <div class="timeline-row">
             <strong>Paper submission</strong>
-            <span>November 20, 2026</span>
+            <span><del class="old-deadline">November 20</del><strong class="new-deadline">November 25, 2026</strong></span>
           </div>
           <div class="timeline-row">
             <strong>Acceptance / rejection notification</strong>
